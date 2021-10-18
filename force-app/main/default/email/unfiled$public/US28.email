@@ -1,0 +1,4 @@
+Hello {!Lead.OwnerFullName}
+
+{!Lead.Status}
+{!Lead.CreatedDate}

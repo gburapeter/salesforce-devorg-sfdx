@@ -1,0 +1,6 @@
+Hello {!User.Manager}
+
+Opportunity: {!Opportunity.Name}
+Link: {!Opportunity.Link}
+
+Waiting for approval

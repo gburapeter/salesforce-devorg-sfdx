@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Client_Sector_Share</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Client Sector Share</label>
+        <sharedTo>
+            <role>Manager_DE</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>Group_PL</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

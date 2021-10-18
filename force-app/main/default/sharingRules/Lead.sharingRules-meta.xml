@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Leads_shared_with_Support_Reps</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Leads shared with Support Reps</label>
+        <sharedTo>
+            <role>Support_Rep</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Sales_Reps_Digital</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>
