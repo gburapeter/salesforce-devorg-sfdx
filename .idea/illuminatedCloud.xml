@@ -4,10 +4,10 @@
     <option name="connections">
       <list>
         <IlluminatedCloudConnection>
-          <option name="connectionName" value="AC-3" />
-          <option name="connectionType" value="SFDX" />
+          <option name="connectionName" value="SfDevOrgSfdx" />
+          <option name="connectionType" value="OAUTH" />
           <option name="defaultModuleName" value="sfdx-devorg" />
-          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/AC_3/OfflineSymbolTable.zip" />
+          <option name="offlineSymbolTablePath" value="$PROJECT_DIR$/IlluminatedCloud/SfDevOrgSfdx/OfflineSymbolTable.zip" />
         </IlluminatedCloudConnection>
       </list>
     </option>

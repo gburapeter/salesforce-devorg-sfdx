@@ -6,6 +6,7 @@
         <members>Project</members>
         <members>WebinarMemberTriggerHandler</members>
         <members>WebinarHandler</members>
+        <members>TestClass</members>
         <name>ApexClass</name>
     </types>
     <types>
