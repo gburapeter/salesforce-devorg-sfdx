@@ -5,6 +5,7 @@
         <members>PriceHandler</members>
         <members>Project</members>
         <members>WebinarMemberTriggerHandler</members>
+        <members>WebinarHandler</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -13,6 +14,7 @@
     </types>
     <types>
         <members>PriceTrigger</members>
+        <members>WebinarTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
