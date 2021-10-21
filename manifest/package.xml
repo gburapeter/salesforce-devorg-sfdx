@@ -7,6 +7,7 @@
         <members>WebinarMemberTriggerHandler</members>
         <members>WebinarHandler</members>
         <members>TestClass</members>
+        <members>WebinarPending</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -1028,6 +1029,17 @@
         <members>Account.Check_On_Hot_Account</members>
         <members>Opportunity.rejected</members>
         <name>WorkflowTask</name>
+    </types>
+    <types>
+        <members>accountLWC</members>
+        <members>createQuestionare</members>
+        <members>asdasd</members>
+        <members>helloworld</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>WebinarPending</members>
+        <name>AuraDefinitionBundle</name>
     </types>
     <version>52.0</version>
 </Package>

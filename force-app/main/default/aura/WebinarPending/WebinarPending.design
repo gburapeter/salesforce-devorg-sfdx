@@ -1,0 +1,7 @@
+<!--
+ - Created by pbura on 10/21/2021.
+ -->
+
+<design:component>
+    <design:attribute name="webinarsLimit" label="Webinars Limit" min="1" max="20" default="10"/>
+</design:component>

@@ -1,0 +1,64 @@
+<!--
+ - Created by pbura on 10/21/2021.
+ -->
+
+<aura:component description="WebinarPending" controller="WebinarPending"
+                implements="flexipage:availableForAllPageTypes">
+    <aura:attribute access="public" type="String" name="webinarsLimit" default="10"/>
+
+    <aura:attribute access="private" type="Webinar__c[]" name="webinars"/>
+    <aura:attribute access="private" type="Object[]" name="columns"/>
+    <aura:attribute access="private" type="Integer" name="webinarCost"/>
+    <aura:attribute access="private" type="Boolean" name="acceptedWebinar"/>
+    <aura:attribute access="private" type="Boolean" name="rejectedWebinar"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+
+    <lightning:datatable keyField="Id" columns="{!v.columns}" data="{!v.webinars}"
+                         onrowaction="{!c.onRowActions}"
+                         showRowNumberColumn="false" hideCheckboxColumn="true"/>
+
+    <aura:if isTrue="{!v.acceptedWebinar}">
+
+    </aura:if>
+
+    <aura:if isTrue="{!v.rejectedWebinar}">
+
+
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+                 aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- Modal/Popup Box Header Starts here-->
+                <header class="slds-modal__header">
+
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Refuse webinar</h2>
+                </header>
+
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p><b>Please enter your refusal reason:
+                        </b>
+                    </p>
+                    <lightning:textarea name="myText" required="true" label="Reasoning"
+                                        messageWhenValueMissing="This field is required."/>
+
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{!c.closeRefusal}"/>
+                    <lightning:button variant="brand"
+                                      label="OK"
+                                      title="OK"
+                                      onclick="{!c.handleRefusal}"/>
+
+                </footer>
+            </div>
+        </section>
+
+    </aura:if>
+
+
+</aura:component>

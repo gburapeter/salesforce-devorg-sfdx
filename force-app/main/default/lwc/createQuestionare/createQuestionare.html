@@ -1,0 +1,34 @@
+<!--
+ - Created by pbura on 10/20/2021.
+ -->
+
+<!-- Create Questionare -->
+<template>
+    <lightning-card title={title}>
+    <lightning-input-field label="Attended webinar" value={wasUserParticipant}
+    onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="Age" value={age}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="Score" value={score}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="Feedback" value={comments}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="Would you recommend" value={recommend}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="Tell us why" value={tellUsWhy}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+        <lightning-input-field label="webinar" value={webinar}
+                               onchange={webinarChangeVal}> </lightning-input-field>
+
+        <lightning-button label="Create new questionare" variant ="brand" onclick={insertQuestionareAction}>
+
+        </lightning-button>
+
+
+
+
+
+
+
+    </lightning-card>
+</template>
